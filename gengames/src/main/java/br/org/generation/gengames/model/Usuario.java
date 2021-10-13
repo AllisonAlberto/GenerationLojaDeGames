@@ -29,6 +29,16 @@ public class Usuario {
 	@NotBlank(message = "O atributo senha é obrigatório!")
 	@Size(min = 8)
 	private String senha;
+	
+	public Usuario(long id, String nome, String usuario, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
+	public Usuario() {
+	}
 
 	public long getId() {
 		return id;
